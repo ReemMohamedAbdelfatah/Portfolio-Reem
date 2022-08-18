@@ -1,27 +1,25 @@
 
 .container {
   background-color: #f7f7f9;
-  height:718px;
+  height: 718px;
   width: 375px;
-  display:flex;
-  flex-direction:column;
+  display: flex;
+  flex-direction: column;
   justify-content: start;
-
 }
 .wrapper{
-  padding:20px;
+  padding: 20px;
 }
 
 .nav-container {
-  display:flex;
+  display: flex;
   align-items: center;
   justify-content: space-between;
- 
 }
 
 .header-container {
   background-image: url("images/header-shapes mobile.png");
-  height:718px;
+  height: 718px;
 }
 
 #logo {
@@ -40,7 +38,7 @@
   font-size: 40px;
   line-height: 52px;
   color: #344563;
-  margin-top:120px;
+  margin-top: 120px;
 }
 
 .about {
@@ -50,7 +48,7 @@
   font-size: 16px;
   line-height: 24px;
   color: #344563;
-  margin-top:30px;
+  margin-top: 30px;
 }
 
 .social {
@@ -59,12 +57,12 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  color: #7F8Cff;
-  margin-top:30px;
+  color: #7f8Cff;
+  margin-top: 30px;
 }
 
 .social-links {
-  margin-top:30px;
-  display:flex;
+  margin-top: 30px;
+  display: flex;
   gap: 10px 20px;
 }
