@@ -1,38 +1,39 @@
 
-.container{
- background-color: #F7F7F9;
- height:718px;
- width: 375px;
- display:flex;
- flex-direction:column;
- justify-content: start;
+.container {
+  background-color: #f7f7f9;
+  height:718px;
+  width: 375px;
+  display:flex;
+  flex-direction:column;
+  justify-content: start;
 
 }
 .wrapper{
   padding:20px;
 }
-.nav-container{
+
+.nav-container {
   display:flex;
   align-items: center;
   justify-content: space-between;
  
 }
 
-.header-container{
+.header-container {
   background-image: url("images/header-shapes mobile.png");
   height:718px;
 }
 
-#logo{
+#logo {
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
-  color: #6070FF;
+  color: #6070ff;
 }
 
-#hello{
+#hello {
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 700;
@@ -41,7 +42,8 @@
   color: #344563;
   margin-top:120px;
 }
-.about{
+
+.about {
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 400;
@@ -50,17 +52,18 @@
   color: #344563;
   margin-top:30px;
 }
-.social{
+
+.social {
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  color: #7F8CFF;
+  color: #7F8Cff;
   margin-top:30px;
 }
 
-.social-links{
+.social-links {
   margin-top:30px;
   display:flex;
   gap: 10px 20px;
