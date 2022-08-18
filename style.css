@@ -1,3 +1,7 @@
+html body {
+  padding: 0;
+  margin: 0;
+}
 
 .container {
   background-color: #f7f7f9;
@@ -19,7 +23,7 @@
 }
 
 .header-container {
-  background-image: url("images/header-shapes mobile.png");
+  background-image: url("images/header-shapes-mobile.png");
   height: 718px;
 }
 
@@ -65,5 +69,7 @@
 .social-links {
   margin-top: 30px;
   display: flex;
+  align-items:center;
   gap: 10px 20px;
 }
+
