@@ -9,22 +9,26 @@ html body {
   width: 375px;
   display: flex;
   flex-direction: column;
-  justify-content: start;
 }
 
 .wrapper {
   padding: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 .nav-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin: 30px;
 }
 
 .header-container {
   background-image: url("images/header-shapes-mobile.png");
-  height: 718px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 #logo {
@@ -66,9 +70,16 @@ html body {
   margin-top: 30px;
 }
 
-.social-links {
+.social-list {
+  list-style: none;
   margin-top: 30px;
   display: flex;
   align-items: center;
-  gap: 10px 20px;
+  gap: 10px;
+  margin: 0; 
+  padding: 0;
+}
+.list-item {
+  list-style: none;
+  
 }
