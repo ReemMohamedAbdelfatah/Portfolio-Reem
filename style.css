@@ -5,8 +5,6 @@ html body {
 
 .container {
   background-color: #f7f7f9;
-  /*height: 718px;
-  width: 375px;*/
   width: 375px;
   height: 700px;
   display: flex;
