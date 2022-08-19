@@ -75,9 +75,10 @@ html body {
   display: flex;
   align-items: center;
   gap: 10px;
-  margin: 30px 0 0 0; 
   padding: 0;
+  margin: 30px 0 0 0; 
 }
+
 .list-item {
   list-style: none;
 }
