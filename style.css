@@ -25,7 +25,7 @@ html body {
 }
 
 .header-container {
-  background-image: url("images/header-shapes-mobile.png");
+  background: url("images/header-shapes-mobile.png") no-repeat center ;
   display: flex;
   flex-direction: column;
   width: 375px;
