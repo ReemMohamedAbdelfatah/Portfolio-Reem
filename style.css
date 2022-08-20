@@ -206,7 +206,7 @@ html body {
   border-radius: 8px;
 }
 
-#js {
+.js {
   width: 89px;
 }
 
@@ -238,7 +238,7 @@ html body {
   margin: 16px;
 }
 
-#project-btn {
+.project-btn {
   text-decoration: none;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
