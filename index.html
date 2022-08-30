@@ -27,7 +27,7 @@
         <section class="header-container">
             <div class="wrapper">
                
-                  <h1 id="hello">I'm Reem.<br> glad to see you!</h1>
+                  <h1 id="hello">I'm Reem.<br> glad to see<br>you!</h1>
                   <p class="about">I'm a Software Developer! I can help you build a product,
                      feature or website. <br> look through some of my work and experience! <br>
                      If you like what you see and have a project you need coded, don't hesitate to contact me.  
@@ -75,8 +75,8 @@
                 A daily selection of privetly<br> personalized reads; no accounts or<br> sign-ups needed. 
             </p>
             <ul class="horizontal-list skills-list">
-                <li class="list-item">
-                    <div class="skills-rect"><a href=" " class="skills">html</a></div>
+                <li class="list-item ">
+                    <div class="skills-rect "><a href=" " class="skills">html</a></div>
                 </li>
                 <li class="list-item">
                     <div class="skills-rect"><a href=" " class="skills">css</a></div>
@@ -86,7 +86,7 @@
                 </li>
             </ul>
             <div class="btn-area">
-                <a href="" id="project-btn">See Project</a> 
+                <button type="button" class="project-btn">See Project</button> 
             </div>
         </div>
         </section>
@@ -129,7 +129,7 @@
                 </li>
             </ul>
             <div class="btn-area">
-                <a href="" class="project-btn">See Project</a> 
+                <button type="button" class="project-btn">See Project</button> 
             </div>
         </div>
         </section>
@@ -172,7 +172,7 @@
                 </li>
             </ul>
             <div class="btn-area">
-                <a href="" class="project-btn">See Project</a> 
+                <button type="button" class="project-btn">See Project</button> 
             </div>
         </div>
         </section>
@@ -215,7 +215,7 @@
                 </li>
             </ul>
             <div class="btn-area">
-                <a href="" class="project-btn">See Project</a> 
+                <button type="button" class="project-btn">See Project</button> 
             </div>
         </div>
         </section >
@@ -238,7 +238,7 @@
                         <li class="list-item"><a href=""><img src="icons/M-icon.svg" alt="M"></a></li>
                   </ul>
             <div class="resumebtn-area">
-                <a href="" id="resume-btn">Get my resume</a>
+                <button type="button"  id="resume-btn">Get my resume</button>
             </div>
             <ul class="categories-list">
                 <li class="language-tab">
@@ -267,7 +267,7 @@
       </section>
       <section class="contactme-section">
         
-        <div class="contactme-form">
+        <form action="https://formspree.io/f/contactme-form" method="post" id="contactme-form" class="contactme-form">
             <h1 class="contactme-header">Contact me</h1>
             <p class="contactme-paragraph">
                 If you have an application you<br> are interested in developing, a <br>
@@ -275,16 +275,18 @@
                 project that needs coding. I’d<br>love to help with it 
             </p>
 
-            <ul class="contactme-formList">
-                <li ><div class="form-textBox smallTxtbox"><span class="TextBox-personal-style">Yeremias</span></div></li>
-                <li ><div class="form-textBox smallTxtbox"><span class="TextBox-personal-style">natajayanj14@gmail.com</span></div></li>
-                <li ><div class="bigTextBox"><span class="TextBox-info-style">Write your message here</span></div></li>
-            </ul>
+            
+                <input type="text" id="sender-name" name="name" class="form-textBox smallTxtbox" placeholder="Yeremias">
+               
+                <input type="email" id="mail" name="user_email" class="form-textBox smallTxtbox" placeholder="natajayanj14@gmail.com">
+                
+                <textarea class="form-textBox bigTextBox">Write your message here</textarea>
+            
             <div class="submitbtn-area">
-                <a href="" id="submit-btn">Get In Touch</a> 
+                <button type="submit" id="submit-btn">Get In Touch</button> 
             </div>
             <div ><img src="icons/Shape.png" class="Shape-line" alt=""></div>
-        </div>
+        </form>
         
     
       </section>

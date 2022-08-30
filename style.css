@@ -20,6 +20,7 @@ html body {
 
 .about-me {
   grid-area: about-me;
+  height: 1100px;
   background-color: #fff;
   border: 1px;
   border-top-right-radius: 100px;
@@ -63,10 +64,11 @@ html body {
 
 .header-container {
   background: url("images/header-shapes-mobile.png") no-repeat center;
+  background-size: 100%;
   display: flex;
   flex-direction: column;
   width: 375px;
-  height: 604px;
+  height: 625px;
 }
 
 #logo {
@@ -85,7 +87,8 @@ html body {
   font-size: 40px;
   line-height: 52px;
   color: #344563;
-  margin-top: 60px;
+  margin-top: 80px;
+  margin-bottom: 10;
 }
 
 .about {
@@ -95,6 +98,8 @@ html body {
   font-size: 16px;
   line-height: 24px;
   color: #344563;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .social {
@@ -102,7 +107,6 @@ html body {
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 24px;
   color: #7f8cff;
 }
 
@@ -110,12 +114,20 @@ html body {
   list-style: none;
   display: flex;
   align-items: center;
+  justify-content: flex-start;
   gap: 10px;
+  margin-top: 0;
+  margin-bottom: 0;
   padding: 0;
 }
 
 .list-item {
   list-style: none;
+  margin-left: 5px;
+}
+
+.first-item-only {
+  margin-left: 16px;
 }
 
 .flex-container {
@@ -125,30 +137,27 @@ html body {
   gap: 0;
   width: 327px;
   height: auto;
-  margin: 114px 24px 114px 24px;
+  margin: 50px 24px 50px 24px;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
 }
 
 .small-list {
-  /* grid-area: tripple; */
   margin-left: 16px;
 }
 
 .card-image {
-  /* grid-area: image; */
   margin: 16px;
 }
 
 .project-name {
   font-family: Poppins, sans-serif;
-
-  /* grid-area: header; */
   font-style: bold;
   font-weight: 900;
   font-size: 32px;
   color: #172b4d;
   margin-left: 16px;
+  margin-bottom: 0;
 }
 
 .circle {
@@ -165,10 +174,11 @@ html body {
   font-size: 13px;
   line-height: 16px;
   color: #344563;
+  margin-left: 5px;
 }
 
 .small-detail {
-  width: 88px;
+  width: 100px;
   height: 16px;
   font-family: Poppins, sans-serif;
   font-style: normal;
@@ -187,12 +197,13 @@ html body {
   line-height: 24px;
   color: #344563;
   margin-left: 16px;
+  margin-top: 0;
 }
 
 .skills-list {
   grid-area: list;
   display: flex;
-  margin-left: 16px;
+  margin-left: 10px;
 }
 
 .skills-rect {
@@ -227,7 +238,6 @@ html body {
 }
 
 .btn-area {
-  /* grid-area: button; */
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -239,7 +249,12 @@ html body {
 }
 
 .project-btn {
-  text-decoration: none;
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -285,10 +300,16 @@ html body {
   justify-content: space-around;
   align-items: center;
   margin-left: 16px;
+  margin-top: 15px;
 }
 
 #resume-btn {
-  text-decoration: none;
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -346,8 +367,8 @@ html body {
   justify-content: center;
   border: 1px;
   border-top-left-radius: 100px;
-  background: #6070ff;
-  margin-top: 100px;
+  background: #6070ff url("images/contact-form-shapes-mobile.png") no-repeat right;
+  background-size: contain;
   height: auto;
   width: 375px;
 }
@@ -360,7 +381,6 @@ html body {
   height: auto;
   width: 375px;
   padding-top: 100px;
-  background: url("images/contact-form-shapes-mobile.png") no-repeat right;
 }
 
 .contactme-header {
@@ -374,6 +394,8 @@ html body {
   text-align: center;
   color: #fff;
   margin-left: 50px;
+  margin-top: 20px;
+  margin-bottom: 0;
 }
 
 .contactme-paragraph {
@@ -384,6 +406,7 @@ html body {
   line-height: 28px;
   text-align: center;
   color: #ebebff;
+  margin-bottom: 40px;
 }
 
 .contactme-formList {
@@ -398,7 +421,15 @@ html body {
 .form-textBox {
   align-items: center;
   display: flex;
+  flex-direction: column;
   align-content: center;
+  width: 100%;
+  margin-right: 24px;
+  margin-left: 24px;
+  margin-bottom: 18px;
+  background: #fff;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
 }
 
 .smallTxtbox {
@@ -407,6 +438,12 @@ html body {
   background: #fff;
   border: 1px solid #cfd8dc;
   border-radius: 8px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  color: #172b4d;
 }
 
 .bigTextBox {
@@ -415,9 +452,22 @@ html body {
   background: #fff;
   border: 1px solid #cfd8dc;
   border-radius: 8px;
+  resize: none;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #b3bac5;
 }
 
 #submit-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -432,13 +482,13 @@ html body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 12px 16px;
+  padding: 12px 16px 12px 16px;
+  padding-top: 20px;
   width: 140px;
   height: 30px;
   background: #fff;
   border-radius: 8px;
-  margin: 20px;
-  margin-left: 40px;
+  margin: 24px;
 }
 
 .TextBox-personal-style {
@@ -461,5 +511,62 @@ html body {
 
 .Shape-line {
   margin-left: 120px;
-  margin-bottom: 20px;
+  margin-bottom: 8px;
+  height: 5px;
+  width: 134px;
+  left: 120px;
+  top: 21px;
+  border-radius: 10px;
+}
+
+input {
+  padding: 10px;
+  padding-right: 0;
+}
+
+input:focus {
+  outline: none !important;
+  border-color: #6070ff;
+  box-shadow: 0 0 10px #0d99ff;
+}
+
+textarea {
+  padding: 10px;
+  padding-right: 0;
+}
+
+textarea:focus {
+  outline: none !important;
+  border-color: #6070ff;
+  box-shadow: 0 0 10px #0d99ff;
+}
+
+.resumebtn-area:hover {
+  outline: none !important;
+  border-color: #6070ff;
+  box-shadow: 0 0 4px #0d99ff;
+}
+
+.submitbtn-area:hover {
+  outline: none !important;
+  border-color: #6070ff;
+  box-shadow: 0 0 4px #fff;
+}
+
+.btn-area:hover {
+  outline: none !important;
+  border-color: #6070ff;
+  box-shadow: 0 0 4px #0d99ff;
+}
+
+#submit-btn:active {
+  color: #fff;
+}
+
+.project-btn:active {
+  color: #fff;
+}
+
+#resume-btn:active {
+  color: #fff;
 }
