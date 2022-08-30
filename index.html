@@ -266,21 +266,20 @@
 
       </section>
       <section class="contactme-section">
+        <h1 class="contactme-header">Contact me</h1>
+        <p class="contactme-paragraph">
+            If you have an application you<br> are interested in developing, a <br>
+            feature that you need built or a <br> 
+            project that needs coding. I’d<br>love to help with it 
+        </p>
         
-        <form action="https://formspree.io/f/contactme-form" method="post" id="contactme-form" class="contactme-form">
-            <h1 class="contactme-header">Contact me</h1>
-            <p class="contactme-paragraph">
-                If you have an application you<br> are interested in developing, a <br>
-                feature that you need built or a <br> 
-                project that needs coding. I’d<br>love to help with it 
-            </p>
-
+        <form action="https://formspree.io/f/moqbvblo" method="post" id="contactme-form" class="contactme-form">
             
-                <input type="text" id="sender-name" name="name" class="form-textBox smallTxtbox" placeholder="Yeremias">
+                <input type="text" id="sender-name" name="name" class="form-textBox smallTxtbox" placeholder="Yeremias" maxlength="30" required>
                
-                <input type="email" id="mail" name="user_email" class="form-textBox smallTxtbox" placeholder="natajayanj14@gmail.com">
+                <input type="email" id="mail" name="user_email" class="form-textBox smallTxtbox" placeholder="natajayanj14@gmail.com" maxlength="500" required>
                 
-                <textarea class="form-textBox bigTextBox">Write your message here</textarea>
+                <textarea class="form-textBox bigTextBox" required>Write your message here</textarea>
             
             <div class="submitbtn-area">
                 <button type="submit" id="submit-btn">Get In Touch</button> 
