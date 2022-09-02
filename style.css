@@ -494,6 +494,7 @@ html body {
     background: #fff;
     border-radius: 8px;
     margin: 24px;
+    margin-right: 100px;
   }
 
   .TextBox-personal-style {
@@ -988,6 +989,7 @@ html body {
     flex-direction: column;
     align-content: center;
     justify-content: center;
+    align-items: center;
     border: 1px;
     border-top-left-radius: 100px;
     background: #6070ff url("images/contact-form-desktop-background.png") no-repeat right;
@@ -1001,10 +1003,10 @@ html body {
     flex-direction: column;
     align-content: center;
     justify-content: center;
+    align-items: center;
     height: 100%;
-    width: 100%;
+    width: 99vmax;
     padding-top: 30px;
-    margin-left: 540px;
   }
 
   .contactme-header {
@@ -1104,7 +1106,6 @@ html body {
     height: 30px;
     background: #fff;
     border-radius: 8px;
-    margin-left: 100px;
     margin-bottom: 80px;
   }
 
