@@ -1,9 +1,9 @@
-@media only screen and (max-width: 765px) {
-  html body {
-    padding: 0;
-    margin: 0;
-  }
+html body {
+  padding: 0;
+  margin: 0;
+}
 
+@media only screen and (max-width: 765px) {
   .desktop-version {
     display: none;
   }
@@ -137,6 +137,7 @@
   .flex-container {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     background-color: #fff;
     gap: 0;
     width: 100%;
@@ -368,6 +369,7 @@
     flex-direction: column;
     align-content: center;
     justify-content: center;
+    align-items: center;
     border: 1px;
     border-top-left-radius: 100px;
     background: #6070ff url("images/contact-form-shapes-mobile.png") no-repeat right;
@@ -587,11 +589,6 @@
 /* ************************************************************** */
 
 @media only screen and (min-width: 765px) {
-  html body {
-    padding: 0;
-    margin: 0;
-  }
-
   .mobile-version {
     display: none;
   }
@@ -633,7 +630,7 @@
 
   .container {
     background-color: #f7f7f9;
-    width: 1440px;
+    width: 100%;
     height: auto;
     display: grid;
     grid-template-areas:
@@ -996,7 +993,7 @@
     background: #6070ff url("images/contact-form-desktop-background.png") no-repeat right;
     background-size: contain;
     height: auto;
-    width: 1440px;
+    width: 100%;
   }
 
   .contactme-form {
@@ -1030,6 +1027,7 @@
     font-size: 20px;
     line-height: 28px;
     text-align: center;
+    align-self: center;
     padding-left: 30px;
     color: #ebebff;
     margin-top: 20;
