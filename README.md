@@ -1,8 +1,9 @@
+# Personal Portfolio Full Mobile Version - Desktop Version
 
-# Personal Portfolio Full Mobile Version
 Practice Flexbox - Semantic HTML - Css - Figma by building My Personal Portfolio.
 
 # Built With
+
 Major languages: HTML-CSS
 Frameworks: none will be added soon ...
 Technologies used: VSCode, GitHub, LightHouse
@@ -11,32 +12,44 @@ Live Demo Link
 https://reemmohamedabdelfatah.github.io/Portfolio-Reem/
 
 # Getting Started
-This is an example of how you may Practice Semantic HTML - FlexBox - GitHub flow and add Linter
+
+This is an example of how you may Practice Forms - Forms Validation - Semantic HTML - FlexBox - Grid - GitHub flow and add Linter
 For clone it the repository, you should use the Code(green button) and select HTTPS or SSH(if you have SSH key) to clone it in your local machine.
 
 To get a local copy up and running follow these simple example steps.
 
 # Prerequisites
+
 VSCode to be installed.
 GitHub account.
 Even Git Bash or VSCode Source of Control to clone it in your local machine.
+
 # Setup
+
 Linters(linters.yml; .hintrc; .stylelintrc.json) - that linters configuration for Web, HTML and CSS
+
 # Install
+
 node.js
 npm
+
 # Usage
+
 Browser
 VSCode
 GitHub
+
 # Run tests
+
 linters.yml for all of linters. (See below)
 Styelint for auto-correct CSS errors or fixing the CSS style.
 WebHint for cross-browser compatibility, speed, and to improve your Web's accessibility.
+
 # Deployment
 
 # The Author
-👤 Reem Mohamed
+
+👤 Reem Muhammed
 
 GitHub: @ReemMohamedAbdelfatah
 
