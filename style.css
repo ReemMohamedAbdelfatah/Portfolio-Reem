@@ -1,9 +1,10 @@
 html body {
   padding: 0;
   margin: 0;
+  overflow-x: hidden;
 }
 
-@media only screen and (max-width: 765px) {
+@media only screen and (max-width: 768px) {
   .desktop-version {
     display: none;
   }
@@ -589,7 +590,7 @@ html body {
 
 /* ************************************************************** */
 
-@media only screen and (min-width: 765px) {
+@media only screen and (min-width: 768px) {
   .mobile-version {
     display: none;
   }
