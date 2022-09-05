@@ -83,6 +83,15 @@ html body {
     font-size: 18px;
     line-height: 20px;
     color: #6070ff;
+    transition: fontsize 2s;
+  }
+
+  #logo:hover {
+    font-size: 35px;
+  }
+
+  .link-logo {
+    text-decoration: none;
   }
 
   #hello {
@@ -373,7 +382,7 @@ html body {
     align-items: center;
     border: 1px;
     border-top-left-radius: 100px;
-    background: #6070ff url("images/contact-form-shapes-mobile.png") no-repeat right;
+    background: #6070ff url("images/contact-form-shapes-mobile.png") no-repeat  right;
     background-size: contain;
     height: auto;
     width: 100%;
@@ -619,6 +628,11 @@ html body {
     color: #344563;
     text-decoration: none;
     margin: 10px;
+    transition: fontsize 2s;
+  }
+
+  .nav-menu-list:hover {
+    font-size: 20px;
   }
 
   .wrapper {
@@ -697,6 +711,15 @@ html body {
     line-height: 20px;
     color: #6070ff;
     margin-left: 100px;
+    transition: fontsize 2s;
+  }
+
+  #logo:hover {
+    font-size: 35px;
+  }
+
+  .link-logo {
+    text-decoration: none;
   }
 
   #hello {
