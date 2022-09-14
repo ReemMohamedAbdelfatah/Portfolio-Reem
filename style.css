@@ -43,6 +43,7 @@ html body {
     display: none;
     align-items: center;
     justify-content: center;
+    z-index: 80;
   }
 
   #modal-overlay #custom-modal {
@@ -52,6 +53,32 @@ html body {
     display: flex;
     flex-direction: column;
     padding: 10px;
+  }
+
+  #close-icon {
+    cursor: pointer;
+  }
+
+  #modal-header {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 40px;
+  }
+
+  .hamburger-list-item {
+    list-style: none;
+  }
+
+  .hamburger-menu-link {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 44px;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    z-index: 100;
   }
 
   .container {
