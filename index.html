@@ -16,13 +16,13 @@
             </a>
             <nav>
               <div class="nav-menu mobile-version">
-               <div class="hamburger-icon">
-               <span class="bar"></span>
-               <span class="bar"></span>
-               <span class="bar"></span>
+                <div class="hamburger-icon">
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                </div>
               </div>
-              </div>
-            
+
               <div class="nav-menu desktop-version">
                 <ul class="desktop-nav-menu">
                   <li class="list-item">
@@ -39,10 +39,10 @@
             </nav>
           </div>
         </header>
-        <div id="modal-overlay">
+        <div id="modal-overlay" class="mobile-version">
           <div id="custom-modal">
             <div id="modal-header">
-               <img src="icons/close-icon.png" alt="Close" id="close-icon"/>
+              <img src="icons/close-icon.png" alt="Close" id="close-icon" />
             </div>
             <div id="modal-content">
               <ul class="modal-menu">
@@ -57,8 +57,13 @@
                 </li>
               </ul>
             </div>
-            </div>
-            </div>
+          </div>
+        </div>
+
+        <!-- ====================================================Pop Up================================================ -->
+
+        <!--  ==================================================End PopUp=================================================  -->
+
         <section class="header-container">
           <div class="wrapper">
             <h1 id="hello">
@@ -155,7 +160,7 @@
               </div>
             </div>
           </div>
-          <div class="mobile-version">
+          <div class="mobile-version" id="0">
             <img
               class="card-image"
               src="images/Snapshoot-Portfolio-Card1.png"
@@ -205,7 +210,9 @@
               </li>
             </ul>
             <div class="btn-area">
-              <button type="button" class="project-btn">See Project</button>
+              <button type="button" class="project-btn popup-project-btn">
+                See Project
+              </button>
             </div>
           </div>
         </div>
@@ -274,7 +281,7 @@
               </div>
             </div>
           </div>
-          <div class="mobile-version">
+          <div class="mobile-version" id="1">
             <img
               class="card-image"
               src="images/Snapshoot-Portfolio-Card2.png"
@@ -323,7 +330,9 @@
               </li>
             </ul>
             <div class="btn-area">
-              <button type="button" class="project-btn">See Project</button>
+              <button type="button" class="project-btn popup-project-btn">
+                See Project
+              </button>
             </div>
           </div>
         </div>
@@ -393,7 +402,7 @@
               </div>
             </div>
           </div>
-          <div class="mobile-version">
+          <div class="mobile-version" id="2">
             <img
               class="card-image"
               src="images/Snapshoot-Portfolio-Card3.png"
@@ -442,7 +451,9 @@
               </li>
             </ul>
             <div class="btn-area">
-              <button type="button" class="project-btn">See Project</button>
+              <button type="button" class="project-btn popup-project-btn">
+                See Project
+              </button>
             </div>
           </div>
         </div>
@@ -511,7 +522,7 @@
               </div>
             </div>
           </div>
-          <div class="mobile-version">
+          <div class="mobile-version" id="3">
             <img
               class="card-image"
               src="images/Snapshoot-Portfolio-Card4.png"
@@ -560,7 +571,9 @@
               </li>
             </ul>
             <div class="btn-area">
-              <button type="button" class="project-btn">See Project</button>
+              <button type="button" class="project-btn popup-project-btn">
+                See Project
+              </button>
             </div>
           </div>
         </div>
@@ -628,12 +641,16 @@
               </li>
               <li class="language-tab">
                 <h1 class="header-languages">Frameworks</h1>
-                <span><img src="icons/RightArrow.png" alt="Right Arrow" /></span>
+                <span
+                  ><img src="icons/RightArrow.png" alt="Right Arrow"
+                /></span>
               </li>
               <li><img src="icons/Separator-Bottom.png" alt="Separator" /></li>
               <li class="language-tab">
                 <h1 class="header-languages">Skills</h1>
-                <span><img src="icons/RightArrow.png" alt="Right Arrow" /></span>
+                <span
+                  ><img src="icons/RightArrow.png" alt="Right Arrow"
+                /></span>
               </li>
               <li><img src="icons/Separator-Bottom.png" alt="Separator" /></li>
             </ul>
@@ -754,6 +771,7 @@
         </form>
       </section>
     </div>
+    <!--<script type="text/javascript" src="JS/data.js"></script>-->
     <script type="text/javascript" src="script.js"></script>
   </body>
 </html>
