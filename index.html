@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div id='popup-overlay'>
+      
+    </div>
     <div class="container">
       <div class="top-header">
         <header>
@@ -16,33 +19,33 @@
             </a>
             <nav>
               <div class="nav-menu mobile-version">
-               <div class="hamburger-icon">
-               <span class="bar"></span>
-               <span class="bar"></span>
-               <span class="bar"></span>
+                <div class="hamburger-icon">
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                </div>
               </div>
-              </div>
-            
+
               <div class="nav-menu desktop-version">
                 <ul class="desktop-nav-menu">
                   <li class="list-item">
-                    <a href="" class="nav-menu-list">Portfolio</a>
+                    <a href="#Portfolio" class="nav-menu-list">Portfolio</a>
                   </li>
                   <li class="list-item">
-                    <a href="" class="nav-menu-list">About</a>
+                    <a href="#About" class="nav-menu-list">About</a>
                   </li>
                   <li class="list-item">
-                    <a href="" class="nav-menu-list">Contact</a>
+                    <a href="#Contact" class="nav-menu-list">Contact</a>
                   </li>
                 </ul>
               </div>
             </nav>
           </div>
         </header>
-        <div id="modal-overlay">
+        <div id="modal-overlay" class="mobile-version" >
           <div id="custom-modal">
             <div id="modal-header">
-               <img src="icons/close-icon.png" alt="Close" id="close-icon"/>
+              <img src="icons/close-icon.png" alt="Close" id="close-icon" />
             </div>
             <div id="modal-content">
               <ul class="modal-menu">
@@ -57,8 +60,9 @@
                 </li>
               </ul>
             </div>
-            </div>
-            </div>
+          </div>
+        </div>
+
         <section class="header-container">
           <div class="wrapper">
             <h1 id="hello">
@@ -97,474 +101,10 @@
           </div>
         </section>
       </div>
-      <section class="card-work1" id="Portfolio">
-        <div class="flex-container">
-          <div class="desktop-version desktop-card">
-            <div>
-              <img
-                class="card-image"
-                src="images/Snapshoot-Portfolio.png"
-                alt="Snapshoot"
-              />
-            </div>
-            <div>
-              <h1 class="project-name">Tonic</h1>
 
-              <ul class="horizontal-list small-list">
-                <li>
-                  <h3 class="small-title">CANOPY</h3>
-                </li>
-                <li>
-                  <div class="circle"></div>
-                </li>
-                <li>
-                  <h5 class="small-detail">Back End Dev</h5>
-                </li>
-                <li>
-                  <div class="circle"></div>
-                </li>
-                <li>
-                  <h5 class="small-detail">2015</h5>
-                </li>
-              </ul>
+      <div class="CardWorksArea">
 
-              <p class="project-desc">
-                A daily selection of privetly<br />
-                personalized reads; no accounts or<br />
-                sign-ups needed.
-              </p>
-              <ul class="horizontal-list skills-list">
-                <li class="list-item">
-                  <div class="skills-rect">
-                    <a href=" " class="skills">html</a>
-                  </div>
-                </li>
-                <li class="list-item">
-                  <div class="skills-rect">
-                    <a href=" " class="skills">css</a>
-                  </div>
-                </li>
-                <li class="list-item">
-                  <div class="skills-rect js">
-                    <a href=" " class="skills">javascript</a>
-                  </div>
-                </li>
-              </ul>
-              <div class="btn-area">
-                <button type="button" class="project-btn">See Project</button>
-              </div>
-            </div>
-          </div>
-          <div class="mobile-version">
-            <img
-              class="card-image"
-              src="images/Snapshoot-Portfolio-Card1.png"
-              alt="Snapshoot"
-            />
-
-            <h1 class="project-name">Tonic</h1>
-
-            <ul class="horizontal-list small-list">
-              <li>
-                <h3 class="small-title">CANOPY</h3>
-              </li>
-              <li>
-                <div class="circle"></div>
-              </li>
-              <li>
-                <h5 class="small-detail">Back End Dev</h5>
-              </li>
-              <li>
-                <div class="circle"></div>
-              </li>
-              <li>
-                <h5 class="small-detail">2015</h5>
-              </li>
-            </ul>
-
-            <p class="project-desc">
-              A daily selection of privetly<br />
-              personalized reads; no accounts or<br />
-              sign-ups needed.
-            </p>
-            <ul class="horizontal-list skills-list">
-              <li class="list-item">
-                <div class="skills-rect">
-                  <a href=" " class="skills">html</a>
-                </div>
-              </li>
-              <li class="list-item">
-                <div class="skills-rect">
-                  <a href=" " class="skills">css</a>
-                </div>
-              </li>
-              <li class="list-item">
-                <div class="skills-rect js">
-                  <a href=" " class="skills">javascript</a>
-                </div>
-              </li>
-            </ul>
-            <div class="btn-area">
-              <button type="button" class="project-btn">See Project</button>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="card-work2">
-        <div class="flex-container">
-          <div class="desktop-version desktop-card-reverse">
-            <div>
-              <img
-                class="card-image"
-                src="images/Snapshoot-Portfolio-desktop.png"
-                alt="Snapshoot"
-              />
-            </div>
-            <div>
-              <h1 class="project-name">Multi-Post Stories</h1>
-
-              <ul class="horizontal-list small-list">
-                <li>
-                  <h3 class="small-title">FACEBOOK</h3>
-                </li>
-                <li>
-                  <div class="circle"></div>
-                </li>
-                <li>
-                  <h5 class="small-detail">Full Stack Dev</h5>
-                </li>
-                <li>
-                  <div class="circle"></div>
-                </li>
-                <li>
-                  <h5 class="small-detail">2015</h5>
-                </li>
-              </ul>
-
-              <p class="project-desc">
-                Experimental content creation feature that allows users to<br />
-                add to an existing story over the course of a day without<br />
-                spamming their friends.
-              </p>
-              <ul class="horizontal-list skills-list">
-                <li class="list-item">
-                  <div class="skills-rect">
-                    <a href=" " class="skills">html</a>
-                  </div>
-                </li>
-                <li class="list-item">
-                  <div class="skills-rect js">
-                    <a href=" " class="skills">Ruby on rails</a>
-                  </div>
-                </li>
-                <li class="list-item">
-                  <div class="skills-rect">
-                    <a href=" " class="skills">css</a>
-                  </div>
-                </li>
-                <li class="list-item">
-                  <div class="skills-rect js">
-                    <a href=" " class="skills">javascript</a>
-                  </div>
-                </li>
-              </ul>
-              <div class="btn-area">
-                <button type="button" class="project-btn">See Project</button>
-              </div>
-            </div>
-          </div>
-          <div class="mobile-version">
-            <img
-              class="card-image"
-              src="images/Snapshoot-Portfolio-Card2.png"
-              alt="Snapshoot"
-            />
-            <h1 class="project-name">Tonic</h1>
-
-            <ul class="horizontal-list small-list">
-              <li>
-                <h3 class="small-title">CANOPY</h3>
-              </li>
-              <li>
-                <div class="circle"></div>
-              </li>
-              <li>
-                <h5 class="small-detail">Back End Dev</h5>
-              </li>
-              <li>
-                <div class="circle"></div>
-              </li>
-              <li>
-                <h5 class="small-detail">2015</h5>
-              </li>
-            </ul>
-
-            <p class="project-desc">
-              A daily selection of privetly<br />
-              personalized reads; no accounts or<br />
-              sign-ups needed.
-            </p>
-            <ul class="horizontal-list skills-list">
-              <li class="list-item">
-                <div class="skills-rect">
-                  <a href=" " class="skills">html</a>
-                </div>
-              </li>
-              <li class="list-item">
-                <div class="skills-rect">
-                  <a href=" " class="skills">css</a>
-                </div>
-              </li>
-              <li class="list-item">
-                <div class="skills-rect js">
-                  <a href=" " class="skills">javascript</a>
-                </div>
-              </li>
-            </ul>
-            <div class="btn-area">
-              <button type="button" class="project-btn">See Project</button>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="card-work3">
-        <div class="flex-container">
-          <div class="desktop-version desktop-card">
-            <div>
-              <img
-                class="card-image"
-                src="images/Snapshoot-Portfolio1-desktop.png"
-                alt="Snapshoot"
-              />
-            </div>
-            <div>
-              <h1 class="project-name">Facebook 360</h1>
-
-              <ul class="horizontal-list small-list">
-                <li>
-                  <h3 class="small-title">FACEBOOK</h3>
-                </li>
-                <li>
-                  <div class="circle"></div>
-                </li>
-                <li>
-                  <h5 class="small-detail">Full Stack Dev</h5>
-                </li>
-                <li>
-                  <div class="circle"></div>
-                </li>
-                <li>
-                  <h5 class="small-detail">2015</h5>
-                </li>
-              </ul>
-
-              <p class="project-desc">
-                Exploring the future of media in Facebook's first Virtual
-                Reality<br />
-                app; a place to discover and enjoy 360 photos and videos on<br />
-                Gear VR.
-              </p>
-              <ul class="horizontal-list skills-list">
-                <li class="list-item">
-                  <div class="skills-rect">
-                    <a href=" " class="skills">html</a>
-                  </div>
-                </li>
-                <li class="list-item">
-                  <div class="skills-rect js">
-                    <a href=" " class="skills">Ruby on rails</a>
-                  </div>
-                </li>
-                <li class="list-item">
-                  <div class="skills-rect">
-                    <a href=" " class="skills">css</a>
-                  </div>
-                </li>
-                <li class="list-item">
-                  <div class="skills-rect js">
-                    <a href=" " class="skills">javascript</a>
-                  </div>
-                </li>
-              </ul>
-              <div class="btn-area">
-                <button type="button" class="project-btn">See Project</button>
-              </div>
-            </div>
-          </div>
-          <div class="mobile-version">
-            <img
-              class="card-image"
-              src="images/Snapshoot-Portfolio-Card3.png"
-              alt="Snapshoot"
-            />
-            <h1 class="project-name">Tonic</h1>
-
-            <ul class="horizontal-list small-list">
-              <li>
-                <h3 class="small-title">CANOPY</h3>
-              </li>
-              <li>
-                <div class="circle"></div>
-              </li>
-              <li>
-                <h5 class="small-detail">Back End Dev</h5>
-              </li>
-              <li>
-                <div class="circle"></div>
-              </li>
-              <li>
-                <h5 class="small-detail">2015</h5>
-              </li>
-            </ul>
-
-            <p class="project-desc">
-              A daily selection of privetly<br />
-              personalized reads; no accounts or<br />
-              sign-ups needed.
-            </p>
-            <ul class="horizontal-list skills-list">
-              <li class="list-item">
-                <div class="skills-rect">
-                  <a href=" " class="skills">html</a>
-                </div>
-              </li>
-              <li class="list-item">
-                <div class="skills-rect">
-                  <a href=" " class="skills">css</a>
-                </div>
-              </li>
-              <li class="list-item">
-                <div class="skills-rect js">
-                  <a href=" " class="skills">javascript</a>
-                </div>
-              </li>
-            </ul>
-            <div class="btn-area">
-              <button type="button" class="project-btn">See Project</button>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="card-work4">
-        <div class="flex-container">
-          <div class="desktop-version desktop-card-reverse">
-            <div>
-              <img
-                class="card-image"
-                src="images/Snapshoot-Portfolio-desktop2.png"
-                alt="Snapshoot"
-              />
-            </div>
-            <div>
-              <h1 class="project-name">Uber Navigation</h1>
-
-              <ul class="horizontal-list small-list">
-                <li>
-                  <h3 class="small-title">Uber</h3>
-                </li>
-                <li>
-                  <div class="circle"></div>
-                </li>
-                <li>
-                  <h5 class="small-detail lead">Lead Developer</h5>
-                </li>
-                <li>
-                  <div class="circle"></div>
-                </li>
-                <li>
-                  <h5 class="small-detail">2018</h5>
-                </li>
-              </ul>
-
-              <p class="project-desc">
-                A smart assistant to make driving more safe, efficient, and
-                fun<br />
-                by unlocking your most expensive computer: your car.
-              </p>
-              <ul class="horizontal-list skills-list">
-                <li class="list-item">
-                  <div class="skills-rect">
-                    <a href=" " class="skills">html</a>
-                  </div>
-                </li>
-                <li class="list-item">
-                  <div class="skills-rect js">
-                    <a href=" " class="skills">Ruby on rails</a>
-                  </div>
-                </li>
-                <li class="list-item">
-                  <div class="skills-rect">
-                    <a href=" " class="skills">css</a>
-                  </div>
-                </li>
-                <li class="list-item">
-                  <div class="skills-rect js">
-                    <a href=" " class="skills">javascript</a>
-                  </div>
-                </li>
-              </ul>
-              <div class="btn-area">
-                <button type="button" class="project-btn">See Project</button>
-              </div>
-            </div>
-          </div>
-          <div class="mobile-version">
-            <img
-              class="card-image"
-              src="images/Snapshoot-Portfolio-Card4.png"
-              alt="Snapshoot"
-            />
-            <h1 class="project-name">Tonic</h1>
-
-            <ul class="horizontal-list small-list">
-              <li>
-                <h3 class="small-title">CANOPY</h3>
-              </li>
-              <li>
-                <div class="circle"></div>
-              </li>
-              <li>
-                <h5 class="small-detail">Back End Dev</h5>
-              </li>
-              <li>
-                <div class="circle"></div>
-              </li>
-              <li>
-                <h5 class="small-detail">2015</h5>
-              </li>
-            </ul>
-
-            <p class="project-desc">
-              A daily selection of privetly<br />
-              personalized reads; no accounts or<br />
-              sign-ups needed.
-            </p>
-            <ul class="horizontal-list skills-list">
-              <li class="list-item">
-                <div class="skills-rect">
-                  <a href=" " class="skills">html</a>
-                </div>
-              </li>
-              <li class="list-item">
-                <div class="skills-rect">
-                  <a href=" " class="skills">css</a>
-                </div>
-              </li>
-              <li class="list-item">
-                <div class="skills-rect js">
-                  <a href=" " class="skills">javascript</a>
-                </div>
-              </li>
-            </ul>
-            <div class="btn-area">
-              <button type="button" class="project-btn">See Project</button>
-            </div>
-          </div>
-        </div>
-      </section>
+      </div>
 
       <section class="about-me" id="About">
         <div class="desktop-version desktop-card">
@@ -628,12 +168,16 @@
               </li>
               <li class="language-tab">
                 <h1 class="header-languages">Frameworks</h1>
-                <span><img src="icons/RightArrow.png" alt="Right Arrow" /></span>
+                <span
+                  ><img src="icons/RightArrow.png" alt="Right Arrow"
+                /></span>
               </li>
               <li><img src="icons/Separator-Bottom.png" alt="Separator" /></li>
               <li class="language-tab">
                 <h1 class="header-languages">Skills</h1>
-                <span><img src="icons/RightArrow.png" alt="Right Arrow" /></span>
+                <span
+                  ><img src="icons/RightArrow.png" alt="Right Arrow"
+                /></span>
               </li>
               <li><img src="icons/Separator-Bottom.png" alt="Separator" /></li>
             </ul>
@@ -741,19 +285,19 @@
             required
           />
 
-          <textarea class="form-textBox bigTextBox" required>
-            Write your message here</textarea
-          >
-
+          <textarea name="message" rows="6" style="height:auto;" placeholder="Write your message here" class="form-textBox bigTextBox" maxlength="500" required id="messageTxtArea"></textarea>
+          <small id="errorMessage"></small>
           <div class="submitbtn-area">
             <button type="submit" id="submit-btn">Get In Touch</button>
           </div>
+          
           <div class="styleLine EndLine">
             <img src="icons/Shape.png" alt="End Line Shape" />
           </div>
         </form>
       </section>
     </div>
+    <script type="text/javascript" src="dynamicScript.js"></script>
     <script type="text/javascript" src="script.js"></script>
   </body>
 </html>

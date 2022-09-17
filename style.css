@@ -4,9 +4,75 @@ html body {
   overflow-x: hidden;
 }
 
+#popup-close-icon {
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+small {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+}
+
 @media only screen and (max-width: 768px) {
   .desktop-version {
     display: none;
+  }
+
+  #popup-overlay {
+    display: none;
+    position: fixed;
+    width: 343px;
+    height: 600px;
+    left: calc(50% - 343px / 2);
+    top: 60px;
+    background: #fff;
+    border: 1px solid #dfe1e6;
+    border-radius: 16px;
+    z-index: 10;
+  }
+
+  #popup-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .popup-btn-area {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .popup-btn {
+    background: none;
+    border: 1px solid #396df2;
+    border-radius: 8px;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    color: #396df2;
+    padding: 10px;
+  }
+
+  .popup-btn-icon {
+    margin-left: 3px;
+  }
+
+  #popup-close-icon {
+    cursor: pointer;
   }
 
   .hamburger-icon {
@@ -78,21 +144,22 @@ html body {
     color: #fff;
     text-decoration: none;
     cursor: pointer;
-    z-index: 100;
   }
 
   .container {
     background-color: #f7f7f9;
-    width: 100%;
+    width: 100vw;
     height: auto;
     display: grid;
     grid-template-areas:
-      "header"
-      "card-work1"
-      "card-work2"
-      "card-work3"
-      "card-work4"
-      "about-me";
+      'header'
+      'CardWorksArea'
+      'about-me'
+      'contactme-form';
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    justify-items: start;
   }
 
   .about-me {
@@ -140,7 +207,7 @@ html body {
   }
 
   .header-container {
-    background: url("images/header-shapes-mobile.png") no-repeat center;
+    background: url('images/header-shapes-mobile.png') no-repeat center;
     background-size: 100%;
     display: flex;
     flex-direction: column;
@@ -235,6 +302,7 @@ html body {
 
   .card-image {
     margin: 16px;
+    object-fit: cover;
   }
 
   .project-name {
@@ -309,7 +377,7 @@ html body {
 
   .skills {
     text-decoration: none;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 12px;
@@ -341,7 +409,7 @@ html body {
     font: inherit;
     cursor: pointer;
     outline: inherit;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 17px;
@@ -353,7 +421,7 @@ html body {
   }
 
   .about-me-header {
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-style: bold;
     font-weight: 700;
     font-size: 40px;
@@ -363,7 +431,7 @@ html body {
   }
 
   .aboutme-paragraph {
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -396,7 +464,7 @@ html body {
     font: inherit;
     cursor: pointer;
     outline: inherit;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 17px;
@@ -428,7 +496,7 @@ html body {
     height: 66.72px;
     background: #f7f7f9;
     border-radius: 8px;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
@@ -436,7 +504,7 @@ html body {
   }
 
   .header-languages {
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
     align-items: center;
     font-style: bold;
     font-weight: 500;
@@ -454,7 +522,7 @@ html body {
     align-items: center;
     border: 1px;
     border-top-left-radius: 100px;
-    background: #6070ff url("images/contact-form-shapes-mobile.png") no-repeat  right;
+    background: #6070ff url('images/contact-form-shapes-mobile.png') no-repeat right;
     background-size: contain;
     height: auto;
     width: 100%;
@@ -463,15 +531,16 @@ html body {
   .contactme-form {
     display: flex;
     flex-direction: column;
-    align-content: center;
-    justify-content: center;
+    align-content: flex-start;
+    justify-content: flex-start;
+    align-items: center;
     height: 100%;
     width: 100%;
     padding-top: 30px;
   }
 
   .contactme-header {
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 40px;
@@ -486,7 +555,7 @@ html body {
   }
 
   .contactme-paragraph {
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -507,9 +576,6 @@ html body {
 
   .form-textBox {
     align-items: center;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
     width: 100%;
     margin-right: 24px;
     margin-left: 24px;
@@ -525,7 +591,7 @@ html body {
     background: #fff;
     border: 1px solid #cfd8dc;
     border-radius: 8px;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 17px;
@@ -540,7 +606,7 @@ html body {
     border: 1px solid #cfd8dc;
     border-radius: 8px;
     resize: none;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
@@ -555,7 +621,7 @@ html body {
     font: inherit;
     cursor: pointer;
     outline: inherit;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 17px;
@@ -580,7 +646,7 @@ html body {
   }
 
   .TextBox-personal-style {
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 17px;
@@ -589,7 +655,7 @@ html body {
   }
 
   .TextBox-info-style {
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
@@ -680,6 +746,79 @@ html body {
     display: flex;
   }
 
+  #popup-overlay {
+    display: none;
+    width: 1156px;
+    height: 630px;
+    border-radius: 16px;
+    border: 1px solid #ebecf0;
+    position: fixed;
+    left: calc(25% - 343px / 2);
+    top: 60px;
+    background: #fff;
+    z-index: 10;
+  }
+
+  #popup-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #popup-close-icon {
+    margin-right: 20px;
+  }
+
+  .popup-btn-area {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .popup-btn {
+    background: none;
+    border: 1px solid #396df2;
+    border-radius: 8px;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    color: #396df2;
+    padding: 10px;
+  }
+
+  .popup-btn-icon {
+    margin-left: 3px;
+  }
+
+  .popup-desc-info {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .image-card-popup-d {
+    width: 1108px;
+    height: 350px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+
+  .image-popup-d {
+    object-fit: stretch;
+    height: 350px;
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+
   .desktop-card-reverse {
     display: flex;
     flex-direction: row-reverse;
@@ -692,7 +831,7 @@ html body {
   }
 
   .nav-menu-list {
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
@@ -718,16 +857,15 @@ html body {
 
   .container {
     background-color: #f7f7f9;
-    width: 100%;
+    width: 100vw;
     height: auto;
     display: grid;
+    justify-items: stretch;
     grid-template-areas:
-      "header"
-      "card-work1"
-      "card-work2"
-      "card-work3"
-      "card-work4"
-      "about-me";
+      'header'
+      'CardWorksArea'
+      'about-me'
+      'contact-me';
   }
 
   .about-me {
@@ -769,7 +907,7 @@ html body {
   }
 
   .header-container {
-    background: url("images/Header-shapes-desktop.png") no-repeat;
+    background: url('images/Header-shapes-desktop.png') no-repeat;
     background-size: 100%;
     display: flex;
     flex-direction: column;
@@ -943,7 +1081,7 @@ html body {
 
   .skills {
     text-decoration: none;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 12px;
@@ -975,7 +1113,7 @@ html body {
     font: inherit;
     cursor: pointer;
     outline: inherit;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 17px;
@@ -987,7 +1125,7 @@ html body {
   }
 
   .about-me-header {
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-style: bold;
     font-weight: 700;
     font-size: 40px;
@@ -997,7 +1135,7 @@ html body {
   }
 
   .aboutme-paragraph {
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -1030,7 +1168,7 @@ html body {
     font: inherit;
     cursor: pointer;
     outline: inherit;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 17px;
@@ -1062,7 +1200,7 @@ html body {
     height: 66.72px;
     background: #f7f7f9;
     border-radius: 8px;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
@@ -1070,7 +1208,7 @@ html body {
   }
 
   .header-languages {
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
     align-items: center;
     font-style: bold;
     font-weight: 500;
@@ -1088,7 +1226,7 @@ html body {
     align-items: center;
     border: 1px;
     border-top-left-radius: 100px;
-    background: #6070ff url("images/contact-form-desktop-background.png") no-repeat right;
+    background: #6070ff url('images/contact-form-desktop-background.png')  no-repeat right;
     background-size: contain;
     height: auto;
     width: 100%;
@@ -1106,27 +1244,25 @@ html body {
   }
 
   .contactme-header {
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 40px;
     line-height: 52px;
     text-align: center;
     color: #fff;
-    margin-left: 50px;
     margin-top: 100px;
     margin-bottom: 0;
   }
 
   .contactme-paragraph {
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 28px;
     text-align: center;
     align-self: center;
-    padding-left: 30px;
     color: #ebebff;
     margin-top: 20;
     margin-bottom: 0;
@@ -1152,7 +1288,7 @@ html body {
     background: #fff;
     border: 1px solid #cfd8dc;
     border-radius: 8px;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 17px;
@@ -1167,7 +1303,7 @@ html body {
     border: 1px solid #cfd8dc;
     border-radius: 8px;
     resize: none;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
@@ -1182,7 +1318,7 @@ html body {
     font: inherit;
     cursor: pointer;
     outline: inherit;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 17px;
@@ -1206,7 +1342,7 @@ html body {
   }
 
   .TextBox-personal-style {
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 17px;
@@ -1215,7 +1351,7 @@ html body {
   }
 
   .TextBox-info-style {
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
