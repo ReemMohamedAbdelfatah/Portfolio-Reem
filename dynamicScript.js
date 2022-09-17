@@ -1,7 +1,6 @@
 const dynamicCardsArea = document.querySelector('.CardWorksArea');
 const popupOverlay = document.querySelector('#popup-overlay');
 const blurContainer = document.querySelector('.container');
-const variable = '';
 const Projects = [
   {
     title: ['Tonic', 'Tonic'],
