@@ -42,7 +42,7 @@
             </nav>
           </div>
         </header>
-        <div id="modal-overlay" class="mobile-version">
+        <div id="modal-overlay" class="mobile-version" >
           <div id="custom-modal">
             <div id="modal-header">
               <img src="icons/close-icon.png" alt="Close" id="close-icon" />
@@ -285,13 +285,12 @@
             required
           />
 
-          <textarea class="form-textBox bigTextBox" required>
-            Write your message here</textarea
-          >
-
+          <textarea name="message" rows="6" style="height:auto;" placeholder="Write your message here" class="form-textBox bigTextBox" maxlength="500" required id="messageTxtArea"></textarea>
+          <small id="errorMessage"></small>
           <div class="submitbtn-area">
             <button type="submit" id="submit-btn">Get In Touch</button>
           </div>
+          
           <div class="styleLine EndLine">
             <img src="icons/Shape.png" alt="End Line Shape" />
           </div>

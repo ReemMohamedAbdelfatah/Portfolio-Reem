@@ -9,6 +9,14 @@ html body {
   margin-right: 20px;
 }
 
+small {
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 24px;
+}
+
 @media only screen and (max-width: 768px) {
   .desktop-version {
     display: none;
@@ -568,9 +576,7 @@ html body {
 
   .form-textBox {
     align-items: center;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
+    
     width: 100%;
     margin-right: 24px;
     margin-left: 24px;
