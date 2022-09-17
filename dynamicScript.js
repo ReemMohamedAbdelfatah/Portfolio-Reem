@@ -429,5 +429,3 @@ seeProjectBtns.forEach((btn) => {
     }
   });
 });
-
-

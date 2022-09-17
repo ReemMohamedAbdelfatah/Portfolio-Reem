@@ -10,11 +10,11 @@ html body {
 }
 
 small {
-  font-family: 'Poppins';
-font-style: normal;
-font-weight: 400;
-font-size: 15px;
-line-height: 24px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -576,7 +576,6 @@ line-height: 24px;
 
   .form-textBox {
     align-items: center;
-    
     width: 100%;
     margin-right: 24px;
     margin-left: 24px;
