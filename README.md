@@ -7,8 +7,8 @@ Practice Flexbox - Semantic HTML - Css - Figma by building a portfolio as a prac
 ## Screenshot
 
 ![readme](./images/screenshoots/mobile-version-1.png)
-![readme](./images/mobile-version-2.png)
-![readme](./images/mobile-version-3.png)
+![readme](./images/screenshoots/mobile-version-2.png)
+![readme](./images/screenshoots/mobile-version-3.png)
 
 # Built With
 
