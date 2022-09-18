@@ -53,7 +53,7 @@ GitHub
 
 - follow this link :
  [HTML and CSS Linters link]( https://github.com/microverseinc/linters-config/tree/master/html-css)
- [Javascript Eslint] (https://github.com/microverseinc/linters-config/tree/master/javascript)
+ [Javascript Eslint]( https://github.com/microverseinc/linters-config/tree/master/javascript)
 
 linters.yml for all of linters. (See below)
 Styelint for auto-correct CSS errors or fixing the CSS style.
